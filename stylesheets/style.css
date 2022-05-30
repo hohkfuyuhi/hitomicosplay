@@ -1,0 +1,120 @@
+/*
+colour palette
+#fcfffc white
+#2d3a3a darkgrey
+#f596aa pink
+*/
+
+@font-face {
+    font-family: Raleway;
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: XiaoWei;
+    src: url('../fonts/ZCOOLXiaoWei-Regular.ttf');
+}
+
+.en {
+    font-family: Raleway;
+}
+
+.cn {
+    font-family: XiaoWei;
+}
+
+body {
+    animation: fadeIn 2s ease 0s 1;
+    background: #f596aa;
+    color: #fcfffc;
+    font-size: 3em;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    text-align: center;
+}
+
+.hitomi img {
+    width: 50%;
+    height: auto;
+}
+
+.amg img {
+    width: 25%;
+    height: auto;
+}
+
+.banner {
+    padding: 0.25em 0;
+}
+
+.details {
+    font-size: 0.5em;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 3em;
+    }
+
+    .details {
+        font-size: 0.75em;
+    }
+
+    .hitomi img {
+        width: 75%;
+        height: auto;
+    }
+
+    .amg img {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hitomi img {
+        width: 75%;
+        height: auto;
+    }
+
+    .amg img {
+        width: 75%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-height: 720px) {
+    .hitomi img {
+        width: 70%;
+        height: auto;
+    }
+
+    .amg img {
+        width: 70%;
+        height: auto;
+    }
+}
