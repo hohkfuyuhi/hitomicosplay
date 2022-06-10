@@ -6,22 +6,80 @@
         <meta http-equiv="X-UA-Compatible" content = "ie=edge">
         <title></title>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">   
-        <link rel="stylesheet" href="stylesheets/style.css">     
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/lightgallery.css">
+        <link rel="stylesheet" href="stylesheets/lg-thumbnail.css">
+
+        <script src="https://kit.fontawesome.com/a7b9880376.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/lightgallery.min.js"></script>
+        <script src="js/lg-thumbnail.min.js"></script>
     </head>
 
-    <body>
+    <body class="unselectable">
         <div class="main">
-            <div class="inner">
-                <div class="hitomi"><img src="images/hitomi.png" alt=""></div>
-                <div class="banner container">
-                    <span class="cn">Hitomi 瞳</span> &#215; <span class="en">AMG</span>
-                    <p class="en details">Details coming soon!</p>
+            <div class="ajax-index">
+                <div class="inner">
+                    <div class="hitomi"><img src="images/hitomi.png" alt=""></div>
+                    <div class="banner container">
+                        <span class="cn">Hitomi 瞳</span> &#215; <span class="en">AMG</span>
+                        <p class="en details">Details coming soon!</p>
+                        <p class="icons">
+                            <a href="https://www.facebook.com/hitomi.rinn" rel="noopener noreferrer nofollow" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/_hitomi99/" rel="noopener noreferrer nofollow" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" id="btn-gallery"><i class="fa-solid fa-image"></i></a>
+                        </p>
+                    </div>
+                    <div class="amg"><img src="images/amg.jpg" alt=""></div>
                 </div>
-                <div class="amg"><img src="images/amg.jpg" alt=""></div>
+            </div>
+            <div class="ajax-gallery">
+                <div class="container">
+                    <p class="home"><a href="#" id="btn-index"><i class="fa-solid fa-house"></i></a></p>
+                    <div id="gallery-container">
+                        <a href="images/gallery/rory%201.jpg"><img src="images/gallery/rory%201.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/rory%202.jpg"><img src="images/gallery/rory%202.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/nezuko%201.jpg"><img src="images/gallery/nezuko%201.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/nezuko%202.jpg"><img src="images/gallery/nezuko%202.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/emt.jpg"><img src="images/gallery/emt.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/platelet.jpg"><img src="images/gallery/platelet.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/kurumi.jpg"><img src="images/gallery/kurumi.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/krul.jpg"><img src="images/gallery/krul.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/black%201.jpg"><img src="images/gallery/black%201.jpg" class="gallery-item" alt=""></a>
+                        <a href="images/gallery/black%202.jpg"><img src="images/gallery/black%202.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/black%203.jpg"><img src="images/gallery/black%203.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/fireworks.jpg"><img src="images/gallery/fireworks.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/yukata.jpg"><img src="images/gallery/yukata.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/childlike.jpg"><img src="images/gallery/childlike.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/jacket.jpg"><img src="images/gallery/jacket.jpg" alt="" class="gallery-item"></a>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     </body>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.ajax-gallery').fadeOut(50);
+        });
+
+        lightGallery(document.getElementById('gallery-container'), {
+            plugins: [lgThumbnail],
+            speed: 500
+        });
+
+        $('#btn-gallery').click(function() {
+            $('.ajax-index').fadeOut(250, function() {
+                $('.ajax-gallery').delay(50).fadeIn(500);
+            });
+        });
+
+        $('#btn-index').click(function() {
+            $('.ajax-gallery').fadeOut(250, function() {
+                $('.ajax-index').delay(50).fadeIn(500);
+            });
+        });
+    </script>
 </html>

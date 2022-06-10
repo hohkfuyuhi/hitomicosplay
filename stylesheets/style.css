@@ -3,6 +3,7 @@ colour palette
 #fcfffc white
 #2d3a3a darkgrey
 #f596aa pink
+#cb4042 vermillion
 */
 
 @font-face {
@@ -57,7 +58,7 @@ body {
 }
 
 .amg img {
-    width: 25%;
+    width: 20%;
     height: auto;
 }
 
@@ -67,6 +68,33 @@ body {
 
 .details {
     font-size: 0.5em;
+}
+
+.fa-facebook, .fa-instagram, .fa-image, .fa-house {
+    color: #fcfffc;
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-image:hover, .fa-house:hover {
+    color: #cb4042;
+}
+
+p.home, #gallery-container {
+    text-align: center;
+}
+
+.gallery-item {
+    height: 200px;
+    padding: 10px 5px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
 }
 
 @media screen and (max-width: 1024px) {
