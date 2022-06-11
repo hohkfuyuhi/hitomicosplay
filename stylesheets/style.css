@@ -29,6 +29,7 @@ body {
     background: #f596aa;
     color: #fcfffc;
     font-size: 3em;
+    overflow: hidden;
 }
 
 @keyframes fadeIn {
@@ -44,8 +45,14 @@ body {
 .main {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.ajax-index {
+    position: absolute;
+    background: #f596aa;
 }
 
 .inner {

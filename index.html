@@ -61,10 +61,6 @@
     </body>
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('.ajax-gallery').fadeOut(50);
-        });
-
         lightGallery(document.getElementById('gallery-container'), {
             plugins: [lgThumbnail],
             speed: 500
@@ -72,13 +68,13 @@
 
         $('#btn-gallery').click(function() {
             $('.ajax-index').fadeOut(250, function() {
-                $('.ajax-gallery').delay(50).fadeIn(500);
+                $('.ajax-gallery').delay(50).fadeIn(250);
             });
         });
 
         $('#btn-index').click(function() {
             $('.ajax-gallery').fadeOut(250, function() {
-                $('.ajax-index').delay(50).fadeIn(500);
+                $('.ajax-index').delay(50).fadeIn(250);
             });
         });
     </script>
