@@ -29,7 +29,6 @@ body {
     background: #f596aa;
     color: #fcfffc;
     font-size: 3em;
-    overflow: hidden;
 }
 
 @keyframes fadeIn {
@@ -48,24 +47,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.ajax-index {
-    position: absolute;
-    background: #f596aa;
-}
-
-.inner {
     text-align: center;
 }
 
+.ajax-index {
+    z-index: 1;
+}
+
+.ajax-gallery {
+    display: none;
+}
+
 .hitomi img {
-    width: 50%;
+    width: 75%;
     height: auto;
 }
 
 .amg img {
-    width: 20%;
+    width: 40%;
     height: auto;
 }
 
@@ -74,7 +73,7 @@ body {
 }
 
 .details {
-    font-size: 0.5em;
+    font-size: 0.55em;
 }
 
 .fa-facebook, .fa-instagram, .fa-image, .fa-house {
@@ -83,10 +82,11 @@ body {
 
 .fa-facebook:hover, .fa-instagram:hover, .fa-image:hover, .fa-house:hover {
     color: #cb4042;
+    cursor: pointer;
 }
 
-p.home, #gallery-container {
-    text-align: center;
+#gallery-container {
+    padding-bottom: 1em;
 }
 
 .gallery-item {
@@ -104,6 +104,34 @@ p.home, #gallery-container {
     cursor: default;
 }
 
+@media screen and (max-width: 1600px) {
+    .hitomi img {
+        width: 50%;
+    }
+
+    .amg img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+        font-size: 2em;
+    }
+
+    .details {
+        font-size: 0.75em;
+    }
+
+    .hitomi img {
+        width: 40%;
+    }
+
+    .amg img {
+        width: 30%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     body {
         font-size: 3em;
@@ -113,43 +141,27 @@ p.home, #gallery-container {
         font-size: 0.75em;
     }
 
-    .hitomi img {
-        width: 75%;
-        height: auto;
-    }
-
-    .amg img {
-        width: 75%;
-        height: auto;
+    .hitomi img, .amg img {
+        width: 60%;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .hitomi img {
-        width: 75%;
-        height: auto;
-    }
-
-    .amg img {
-        width: 75%;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 400px) {
     body {
         font-size: 2em;
     }
+
+    .hitomi img, .amg img {
+        width: 75%;
+    }
+}
+/*
+@media screen and (max-height: 720px) {
+body {
+font-size: 1.5em;
 }
 
-@media screen and (max-height: 720px) {
-    .hitomi img {
-        width: 70%;
-        height: auto;
-    }
-
-    .amg img {
-        width: 70%;
-        height: auto;
-    }
+.hitomi img, .amg img {
+width: 75%;
+}
 }

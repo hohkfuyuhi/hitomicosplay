@@ -13,7 +13,7 @@
 
         <script src="https://kit.fontawesome.com/a7b9880376.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="js/lightgallery.min.js"></script>
         <script src="js/lg-thumbnail.min.js"></script>
     </head>
@@ -21,60 +21,58 @@
     <body class="unselectable">
         <div class="main">
             <div class="ajax-index">
-                <div class="inner">
-                    <div class="hitomi"><img src="images/hitomi.png" alt=""></div>
-                    <div class="banner container">
-                        <span class="cn">Hitomi 瞳</span> &#215; <span class="en">AMG</span>
-                        <p class="en details">Details coming soon!</p>
-                        <p class="icons">
-                            <a href="https://www.facebook.com/hitomi.rinn" rel="noopener noreferrer nofollow" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/_hitomi99/" rel="noopener noreferrer nofollow" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" id="btn-gallery"><i class="fa-solid fa-image"></i></a>
-                        </p>
-                    </div>
-                    <div class="amg"><img src="images/amg.jpg" alt=""></div>
+                <div class="hitomi"><img src="images/hitomi.png" alt=""></div>
+                <div class="banner container">
+                    <span class="cn">Hitomi 瞳</span> &#215; <span class="en">AMG</span>
+                    <p class="en details">Details coming soon!</p>
+                    <p class="icons">
+                        <a href="https://www.facebook.com/hitomi.rinn" rel="noopener noreferrer nofollow" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_hitomi99/" rel="noopener noreferrer nofollow" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <span id="btn-gallery"><i class="fa-solid fa-image"></i></span>
+                    </p>
                 </div>
+                <div class="amg"><img src="images/amg.jpg" alt=""></div>
             </div>
             <div class="ajax-gallery">
                 <div class="container">
-                    <p class="home"><a href="#" id="btn-index"><i class="fa-solid fa-house"></i></a></p>
+                    <p class="home"><span id="btn-index"><i class="fa-solid fa-house"></i></span></p>
                     <div id="gallery-container">
-                        <a href="images/gallery/rory%201.jpg"><img src="images/gallery/rory%201.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/rory%202.jpg"><img src="images/gallery/rory%202.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/nezuko%201.jpg"><img src="images/gallery/nezuko%201.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/nezuko%202.jpg"><img src="images/gallery/nezuko%202.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/emt.jpg"><img src="images/gallery/emt.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/platelet.jpg"><img src="images/gallery/platelet.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/kurumi.jpg"><img src="images/gallery/kurumi.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/krul.jpg"><img src="images/gallery/krul.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/black%201.jpg"><img src="images/gallery/black%201.jpg" class="gallery-item" alt=""></a>
-                        <a href="images/gallery/black%202.jpg"><img src="images/gallery/black%202.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/black%203.jpg"><img src="images/gallery/black%203.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/fireworks.jpg"><img src="images/gallery/fireworks.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/yukata.jpg"><img src="images/gallery/yukata.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/childlike.jpg"><img src="images/gallery/childlike.jpg" alt="" class="gallery-item"></a>
-                        <a href="images/gallery/jacket.jpg"><img src="images/gallery/jacket.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/rory%201.jpg"><img src="images/gallery/thumb/rory%201-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/rory%202.jpg"><img src="images/gallery/thumb/rory%202-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/nezuko%201.jpg"><img src="images/gallery/thumb/nezuko%201-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/nezuko%202.jpg"><img src="images/gallery/thumb/nezuko%202-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/emt.jpg"><img src="images/gallery/thumb/emt-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/platelet.jpg"><img src="images/gallery/thumb/platelet-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/kurumi.jpg"><img src="images/gallery/thumb/kurumi-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/krul.jpg"><img src="images/gallery/thumb/krul-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/black%201.jpg"><img src="images/gallery/thumb/black%201-thumb.jpg" class="gallery-item" alt=""></a>
+                        <a href="images/gallery/black%202.jpg"><img src="images/gallery/thumb/black%202-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/black%203.jpg"><img src="images/gallery/thumb/black%203-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/fireworks.jpg"><img src="images/gallery/thumb/fireworks-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/yukata.jpg"><img src="images/gallery/thumb/yukata-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/childlike.jpg"><img src="images/gallery/thumb/childlike-thumb.jpg" alt="" class="gallery-item"></a>
+                        <a href="images/gallery/jacket.jpg"><img src="images/gallery/thumb/jacket-thumb.jpg" alt="" class="gallery-item"></a>
                     </div>
                 </div>
             </div>
         </div>
     </body>
 
-    <script type="text/javascript">
+    <script>
         lightGallery(document.getElementById('gallery-container'), {
             plugins: [lgThumbnail],
             speed: 500
         });
-
+        
         $('#btn-gallery').click(function() {
             $('.ajax-index').fadeOut(250, function() {
-                $('.ajax-gallery').delay(50).fadeIn(250);
+                $('.ajax-gallery').fadeIn(250);
             });
         });
 
         $('#btn-index').click(function() {
             $('.ajax-gallery').fadeOut(250, function() {
-                $('.ajax-index').delay(50).fadeIn(250);
+                $('.ajax-index').fadeIn(250);
             });
         });
     </script>
