@@ -1,5 +1,8 @@
 # hitomixamg
 _____
+**VER 1.1.1 | 20/06/22**  
+Forgot to add in website title oops
+_____
 **VER 1.1.0 | 11/06/22**  
 Gallery added!
 _____
