@@ -78,6 +78,7 @@ body {
 
 .fa-facebook, .fa-instagram, .fa-image, .fa-house {
     color: #fcfffc;
+    transition: color 0.25s ease;
 }
 
 .fa-facebook:hover, .fa-instagram:hover, .fa-image:hover, .fa-house:hover {
