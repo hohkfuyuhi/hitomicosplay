@@ -1,4 +1,7 @@
-# hitomixamg
+# hitomicosplay
+_____
+**VER 1.1.3 | 18/07/22**  
+Added favicon
 _____
 **VER 1.1.2 | 27/06/22**  
 Cleaned up some CSS
