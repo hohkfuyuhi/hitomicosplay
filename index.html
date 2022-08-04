@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, initial-scale = 1.0">
         <meta http-equiv="X-UA-Compatible" content = "ie=edge">
-        <title>Hitomi x AMG</title>
+        <title>Hitomi 瞳</title>
+
+        <link rel="icon" type="image/png" href="images/favicon.png">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="stylesheets/style.css">
@@ -24,7 +26,7 @@
                 <div class="hitomi"><img src="images/hitomi.png" alt=""></div>
                 <div class="banner container">
                     <span class="cn">Hitomi 瞳</span> &#215; <span class="en">AMG</span>
-                    <p class="en details">Details coming soon!</p>
+                    <div class="clickhere en">Click here for more details!</div>
                     <p class="icons">
                         <a href="https://www.facebook.com/hitomi.rinn" rel="noopener noreferrer nofollow" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.instagram.com/_hitomi99/" rel="noopener noreferrer nofollow" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -35,7 +37,6 @@
             </div>
             <div class="ajax-gallery">
                 <div class="container">
-                    <p class="home"><span id="btn-index"><i class="fa-solid fa-house"></i></span></p>
                     <div id="gallery-container">
                         <a href="images/gallery/rory%201.jpg"><img src="images/gallery/thumb/rory%201-thumb.jpg" alt="" class="gallery-item"></a>
                         <a href="images/gallery/rory%202.jpg"><img src="images/gallery/thumb/rory%202-thumb.jpg" alt="" class="gallery-item"></a>
@@ -53,7 +54,16 @@
                         <a href="images/gallery/childlike.jpg"><img src="images/gallery/thumb/childlike-thumb.jpg" alt="" class="gallery-item"></a>
                         <a href="images/gallery/jacket.jpg"><img src="images/gallery/thumb/jacket-thumb.jpg" alt="" class="gallery-item"></a>
                     </div>
+                    <nav class="navbar sticky-bottom"><span id="btn-index1"><i class="fa-solid fa-house"></i></span></nav>
                 </div>
+            </div>
+            <div class="ajax-details">
+                <div class="container">
+                    <img src="images/hitomi-details.jpg" alt="" id="hitomidetails">
+                    <img src="images/hitomi-vert.jpg" alt="" id="hitomivert">
+                    <div class="mobile">Hitomi will be at booth CA25<br>See you there ~</div>
+                </div>
+                <nav class="navbar sticky-bottom"><span id="btn-index2"><i class="fa-solid fa-house"></i></span></nav>
             </div>
         </div>
     </body>
@@ -63,16 +73,22 @@
             plugins: [lgThumbnail],
             speed: 500
         });
-        
-        $('#btn-gallery').click(function() {
-            $('.ajax-index').fadeOut(250, function() {
-                $('.ajax-gallery').fadeIn(250);
+
+        $('.clickhere').click(function() {
+            $('.ajax-index, .ajax-gallery').fadeOut(250, function() {
+                $('.ajax-details').delay(250).fadeIn(250);
             });
         });
 
-        $('#btn-index').click(function() {
-            $('.ajax-gallery').fadeOut(250, function() {
-                $('.ajax-index').fadeIn(250);
+        $('#btn-gallery').click(function() {
+            $('.ajax-index, .ajax-details').fadeOut(250, function() {
+                $('.ajax-gallery').delay(250).fadeIn(250);
+            });
+        });
+
+        $('#btn-index1, #btn-index2').click(function() {
+            $('.ajax-gallery, .ajax-details').fadeOut(250, function() {
+                $('.ajax-index').delay(250).fadeIn(250);
             });
         });
     </script>

@@ -1,8 +1,8 @@
 /*
 colour palette
-#fcfffc white
+#fcfffc babypowder
 #2d3a3a darkgrey
-#f596aa pink
+#f596aa mauvelous
 #cb4042 vermillion
 */
 
@@ -54,7 +54,7 @@ body {
     z-index: 1;
 }
 
-.ajax-gallery {
+.ajax-gallery, .ajax-details {
     display: none;
 }
 
@@ -72,8 +72,9 @@ body {
     padding: 0.25em 0;
 }
 
-.details {
+.clickhere {
     font-size: 0.55em;
+    transition: color 0.25s ease;
 }
 
 .fa-facebook, .fa-instagram, .fa-image, .fa-house {
@@ -81,18 +82,26 @@ body {
     transition: color 0.25s ease;
 }
 
-.fa-facebook:hover, .fa-instagram:hover, .fa-image:hover, .fa-house:hover {
+.fa-facebook:hover, .fa-instagram:hover, .fa-image:hover, .fa-house:hover, .clickhere:hover {
     color: #cb4042;
     cursor: pointer;
 }
 
 #gallery-container {
-    padding-bottom: 1em;
+    padding-bottom: 0em;
 }
 
 .gallery-item {
     height: 200px;
     padding: 10px 5px;
+}
+
+.navbar {
+    display: block;
+}
+
+#hitomivert, .mobile {
+    display: none;
 }
 
 .unselectable {
@@ -131,6 +140,10 @@ body {
     .amg img {
         width: 30%;
     }
+
+    #hitomidetails {
+        width: 75%;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -155,14 +168,19 @@ body {
     .hitomi img, .amg img {
         width: 75%;
     }
-}
-/*
-@media screen and (max-height: 720px) {
-body {
-font-size: 1.5em;
-}
 
-.hitomi img, .amg img {
-width: 75%;
-}
+    #hitomidetails {
+        display: none;
+    }
+
+    #hitomivert {
+        display: inline;
+        width: 60%;
+        padding: 0.5em;
+    }
+    
+    .mobile {
+        display: block;
+        font-size: 0.75em;
+    }
 }
