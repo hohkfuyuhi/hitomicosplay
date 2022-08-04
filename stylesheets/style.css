@@ -73,6 +73,8 @@ body {
 }
 
 .clickhere {
+    display: table;
+    margin: 0 auto;
     font-size: 0.55em;
     transition: color 0.25s ease;
 }
@@ -129,7 +131,7 @@ body {
         font-size: 2em;
     }
 
-    .details {
+    .clickhere {
         font-size: 0.75em;
     }
 
@@ -151,7 +153,7 @@ body {
         font-size: 3em;
     }
 
-    .details {
+    .clickhere {
         font-size: 0.75em;
     }
 
