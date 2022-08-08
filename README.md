@@ -1,5 +1,10 @@
 # hitomicosplay
 _____
+**VER 1.2.0 | 08/87/22**  
+Updated website
+- added AMG details (floor plan)
+- added Kitagawa Marin bunting pre-order
+_____
 **VER 1.1.3 | 18/07/22**  
 Added favicon
 _____
