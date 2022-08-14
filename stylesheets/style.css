@@ -54,7 +54,7 @@ body {
     z-index: 1;
 }
 
-.ajax-gallery, .ajax-details {
+.ajax-gallery, .ajax-details, .ajax-merch {
     display: none;
 }
 
@@ -72,11 +72,16 @@ body {
     padding: 0.25em 0;
 }
 
-.floorplan, .preorder {
+.floorplan, .merch {
     display: table;
     margin: 0 auto;
     font-size: 0.55em;
     transition: color 0.25s ease;
+}
+
+#merch1, #merch2 {
+    width: 40%;
+    height: auto;
 }
 
 .fa-facebook, .fa-instagram, .fa-image, .fa-house {
@@ -84,7 +89,7 @@ body {
     transition: color 0.25s ease;
 }
 
-.fa-facebook:hover, .fa-instagram:hover, .fa-image:hover, .fa-house:hover, .floorplan:hover {
+.fa-facebook:hover, .fa-instagram:hover, .fa-image:hover, .fa-house:hover, .floorplan:hover, .merch:hover {
     color: #cb4042;
     cursor: pointer;
 }
@@ -180,9 +185,14 @@ body {
         width: 60%;
         padding: 0.5em;
     }
-    
+
     .mobile {
         display: block;
         font-size: 0.75em;
+    }
+
+    #merch1, #merch2 {
+        width: 75%;
+        padding: 0.5em;
     }
 }

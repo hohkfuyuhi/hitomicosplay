@@ -27,7 +27,7 @@
                 <div class="banner container">
                     <span class="cn">Hitomi 瞳</span> &#215; <span class="en">AMG</span>
                     <div class="floorplan en">Click here for AMG floorplan!</div>
-                    <div class="preorder en"><a href="https://forms.gle/LQMnxvcLUNRa4WSN8" rel="noopener noreferrer nofollow" target="_blank">Click here to pre-order Kitagawa Marin bunting!</a></div>
+                    <div class="merch en">Click here for merchandise list!</div>
                     <p class="icons">
                         <a href="https://www.facebook.com/hitomi.rinn" rel="noopener noreferrer nofollow" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.instagram.com/_hitomi99/" rel="noopener noreferrer nofollow" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -66,6 +66,13 @@
                 </div>
                 <nav class="navbar sticky-bottom"><span id="btn-index2"><i class="fa-solid fa-house"></i></span></nav>
             </div>
+            <div class="ajax-merch">
+                <div class="container">
+                    <img src="images/merch/merch1.jpg" alt="" id="merch1">
+                    <img src="images/merch/merch2.jpg" alt="" id="merch2">
+                </div>
+                <nav class="navbar sticky-bottom"><span id="btn-index3"><i class="fa-solid fa-house"></i></span></nav>
+            </div>
         </div>
     </body>
 
@@ -76,19 +83,25 @@
         });
 
         $('.floorplan').click(function() {
-            $('.ajax-index, .ajax-gallery').fadeOut(250, function() {
+            $('.ajax-index, .ajax-gallery, .ajax-merch').fadeOut(250, function() {
                 $('.ajax-details').delay(250).fadeIn(250);
             });
         });
 
+        $('.merch').click(function() {
+            $('.ajax-index, .ajax-gallery, .ajax-details').fadeOut(250, function() {
+                $('.ajax-merch').delay(250).fadeIn(250);
+            });
+        });
+
         $('#btn-gallery').click(function() {
-            $('.ajax-index, .ajax-details').fadeOut(250, function() {
+            $('.ajax-index, .ajax-details, .ajax-merch').fadeOut(250, function() {
                 $('.ajax-gallery').delay(250).fadeIn(250);
             });
         });
 
-        $('#btn-index1, #btn-index2').click(function() {
-            $('.ajax-gallery, .ajax-details').fadeOut(250, function() {
+        $('#btn-index1, #btn-index2, #btn-index3').click(function() {
+            $('.ajax-gallery, .ajax-details, .ajax-merch').fadeOut(250, function() {
                 $('.ajax-index').delay(250).fadeIn(250);
             });
         });
